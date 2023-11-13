@@ -36,7 +36,7 @@ final class AnimatedLaunchScreen: UIViewController {
         super.viewDidAppear(animated)
         animateLoading()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             let mainTabBarController = MainTabBarController()
             mainTabBarController.modalPresentationStyle = .fullScreen
             self.present(mainTabBarController, animated: true, completion: nil)
